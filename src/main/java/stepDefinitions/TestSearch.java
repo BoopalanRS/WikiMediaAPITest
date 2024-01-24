@@ -37,7 +37,7 @@ public class TestSearch {
        RestAssured.baseURI=baseURL;
    }
 
-   @When("^a search for pages containing for (.*) is executed$")
+    @When("^a search for pages containing for (.*) is executed$")
     public void searchPageName(String searchKeyword){
         response  = RestAssured.get("/search/page?q="+searchKeyword);
        statusCode = response.getStatusCode();
@@ -64,7 +64,5 @@ public class TestSearch {
         // Compare timestamps
         Assert.assertTrue("Actual timestamp should be greater than expected timestamp",
                           actualTimestamp.compareTo(expectedTimestamp) > 0);
-
     }
-
 }

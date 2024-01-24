@@ -73,9 +73,9 @@ to set up the test framework:
    |-test
      |-java                 
         |-runner                            #   this package contains cucumber test runner configuration file for the test structures and groupings
-            |-TestRunner                    #   all the java source files need to be stored in this folder 
-     |-resources                                 #   resources folder, json files, xml files, excel files
-        |-config.properities                     #   this package that will contain all global configs and properties
+            |-TestRunner                    #   this is the testRunner java file from where cucumer configuration is available
+     |-resources                            #   resources folder, json files, xml files, excel files
+        |-config.properities                #   this package that will contain all global configs and properties
 |-.gitignore                                #   git ignore config file
 |-pom.xml                                   #   maven's project object model file which contains all project's required dependencies, plugins, profiles, etc
 |-README.md                                 #   you are currently viewing this file
@@ -96,7 +96,10 @@ or
 ```
 mvn clean test
 ```
-## Screenshot from test case execution from terminal
-Please find 
+## Screen shot to run the maven (mnv) command to RUN the test
+![Screenshot](docs/mvn_command_in_terminal.png)
+
+## Screenshot of test case execution result 
 ![Screenshot](docs/test_execution_result.png)
-# WikiMediaAPITest
+
+For future, we can also add reports like Allure or any other.
