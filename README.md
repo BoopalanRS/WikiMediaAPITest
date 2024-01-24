@@ -1,13 +1,11 @@
 # HomeTaskTest API - WikiMedia Search
 
-
-
 ## Index
 - [Introduction](#introduction)
 - [Required Software](#required-software)
 - [Getting the Code](#getting-the-code)
 - [Project Structure](#project-structure)
-- [Running the Tests](#running-the-tests)
+- [To Run the Tests](#To-Run-the-tests)
 
 # Introduction
 
@@ -18,7 +16,7 @@ Scenario 1:
 
 GIVEN A client of the API 
 
-WHEN A search for pages containing for ‘furry rabbits’ is executed 
+WHEN A search for pages containing for ‘furry rabbits’ is executed
 
 THEN A page with the title ‘Sesame Street’ is found
 
@@ -29,7 +27,6 @@ GIVEN The result for ‘furry rabbits’ search contains ‘Sesame Street’
 WHEN The page details for Sesame Street are requested
 
 THEN It has a latest timestamp > 2023-08-17
-
 
 
 ## Required Software
@@ -55,11 +52,16 @@ to set up the test framework:
 - Open IntelliJ, Click "Get from VCS button", then type the repository's url,
   and choose your desired directory.
 
+- Once you clone the repository, and the IDE builds your maven project,
+  you'll see the project in the following structure
 
-- **Once you clone the repository, and the IDE builds your maven project,
-  you'll see the project in the following structure**
+## Project Structure:
 
-## Project Structure
+### screenshot : 
+![Screenshot](docs/project_folder_structure.png)
+
+- The project folder structure is explaind below 
+
 ```
 |-.idea                                     #   git ignore config file
 |-docs                                      #   all documentation related files and screenshots are here  
@@ -73,17 +75,16 @@ to set up the test framework:
    |-test
      |-java                 
         |-runner                            #   this package contains cucumber test runner configuration file for the test structures and groupings
-            |-TestRunner                    #   this is the testRunner java file from where cucumer configuration is available
-     |-resources                            #   resources folder, json files, xml files, excel files
-        |-config.properities                #   this package that will contain all global configs and properties
+            |-TestRunner                    #   all the java source files need to be stored in this folder 
+     |-resources                                 #   resources folder, json files, xml files, excel files
+        |-config.properities                     #   this package that will contain all global configs and properties
 |-.gitignore                                #   git ignore config file
 |-pom.xml                                   #   maven's project object model file which contains all project's required dependencies, plugins, profiles, etc
 |-README.md                                 #   you are currently viewing this file
 ```   
-## screenshot : project folder structure
-![Screenshot](docs/project_folder_structure.png)
 
-## Running the Tests
+
+##To Run the Tests
 
 ### How to run the tests
 Tests can be run using a maven command in the terminal/commandline from the project located folder,
@@ -96,10 +97,13 @@ or
 ```
 mvn clean test
 ```
-## Screen shot to run the maven (mnv) command to RUN the test
+### Screen shot to run the maven (mnv) command to RUN the test
 ![Screenshot](docs/mvn_command_in_terminal.png)
 
-## Screenshot of test case execution result 
+### Screenshot of test case execution result 
+
 ![Screenshot](docs/test_execution_result.png)
 
-For future, we can also add reports like Allure or any other.
+
+
+- For future, we can also add reports like Allure or any other.   
