@@ -4,8 +4,9 @@
 - [Introduction](#introduction)
 - [Required Software](#required-software)
 - [Getting the Code](#getting-the-code)
-- [Project Structure](#project-structure)
-- [To Run the Tests](#To-Run-the-tests)
+- [Project Structure](#project-structure-)
+- [To Run the Tests](#how-to-run-the-tests)
+
 
 # Introduction
 
@@ -55,7 +56,9 @@ to set up the test framework:
 - Once you clone the repository, and the IDE builds your maven project,
   you'll see the project in the following structure
 
-## Project Structure:
+
+## Project-Structure:
+
 
 ### screenshot : 
 ![Screenshot](docs/project_folder_structure.png)
@@ -75,19 +78,19 @@ to set up the test framework:
    |-test
      |-java                 
         |-runner                            #   this package contains cucumber test runner configuration file for the test structures and groupings
-            |-TestRunner                    #   all the java source files need to be stored in this folder 
+            |-TestRunner                    #   this is the testRunner java file from where cucumer configuration is available 
      |-resources                            #   resources folder, json files, xml files, excel files
         |-config.properities                #   this file contain all global configs and properties
 |-pom.xml                                   #   maven's project object model file which contains all project's required dependencies, plugins, profiles, etc
 |-README.md                                 #   you are currently viewing this file
 ```   
 
-
-##To Run the Tests
+## To Run the Tests
 
 ### How to run the tests
 Tests can be run using a maven command in the terminal/commandline from the project located folder,
-Example : |locationOfTheRepositoryDownloaded| HomeTaskTestAPI % "we need to pass the below command here"
+
+Example : "locationOfTheRepositoryDownloaded"  HomeTaskTestAPI % "we need to pass the below command here"
 
 ```
 mvn clean install
