@@ -76,9 +76,8 @@ to set up the test framework:
      |-java                 
         |-runner                            #   this package contains cucumber test runner configuration file for the test structures and groupings
             |-TestRunner                    #   all the java source files need to be stored in this folder 
-     |-resources                                 #   resources folder, json files, xml files, excel files
-        |-config.properities                     #   this package that will contain all global configs and properties
-|-.gitignore                                #   git ignore config file
+     |-resources                            #   resources folder, json files, xml files, excel files
+        |-config.properities                #   this file contain all global configs and properties
 |-pom.xml                                   #   maven's project object model file which contains all project's required dependencies, plugins, profiles, etc
 |-README.md                                 #   you are currently viewing this file
 ```   
